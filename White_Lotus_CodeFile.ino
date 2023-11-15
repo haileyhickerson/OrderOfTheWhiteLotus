@@ -85,12 +85,12 @@ void loop() {
 void doPullups() {
   // pull-up bar
   for (int i = 0; i < 5; i++) {
-    for (barPos = 20; barPos <= 40; barPos += 1) {
+    for (barPos = 20; barPos <= 48; barPos += 1) {
       pullupBar.write(barPos);
       delay(35);
     }
     delay(80);
-    for (barPos = 40; barPos >= 20; barPos -= 1) { 
+    for (barPos = 48; barPos >= 20; barPos -= 1) { 
       pullupBar.write(barPos);             
       delay(35);                      
     }
